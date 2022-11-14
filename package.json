@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "sass": "^1.56.1"
+  }
+}
+{
+  "keywords": [],
+  "name": "dmd",
+  "version": "MAJOR.MINOR.PATCH",
+  "dependencies": "bootstrap: ^5.2.1",
+  "repository": {
+    "type”: "git",
+    "url": "https:// celedelgado.github.io/dmd",
+  }
+  "author": "Celeste Delgado",
+  "license": "apache-2-0",
+}
