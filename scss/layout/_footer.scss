@@ -1,0 +1,109 @@
+// * {
+//     border: 1px solid red;
+// }
+
+
+//-------------Footer: vista mobile----------
+footer {
+    background: #111;
+    height: auto;
+    width: 100%;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #FFF;
+}
+.footer--content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    &--title h3{
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 3rem;
+    }
+    &--title p{
+        max-width: 500px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 14px;
+    }
+    &--title--socials {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0 3rem 0;
+        li { 
+            margin: 0 10px;
+            
+        }
+        a {
+            text-decoration: none;
+            color: #FFF;
+        }
+        a i {
+            font-size: 1.7rem;
+        }
+        .facebook a:active i {
+            color: aqua;
+        }
+        .instagram a:active i {
+            color: rgb(255, 0, 255);
+        }
+        .google a:active i {
+            color: rgb(255, 0, 43);
+        }
+        .behance a:active i {
+            color: rgb(119, 255, 119)
+        }
+        
+    }
+    &--bottom {
+        background: rgb(0, 0, 0);
+        padding: 20px 0;
+        text-align: center;
+    }
+    p {
+        font-size: 14px;
+        word-spacing: 2px;
+        text-transform: capitalize;
+        span {
+            text-transform: uppercase;
+            opacity: .4;
+            font-weight: 200;
+        }
+    }
+}
+.footer--content--bottom--licencia {
+    font-size: 10px;
+    padding: 0px 15px;
+}
+
+
+
+/*****Vista Tablet*****/
+@mixin tablet {
+    @media (min-width: 768px) {
+        @content
+    }
+} 
+
+@include tablet {
+    .footer--content--title--socials .facebook:hover i {
+        color: aqua;
+    }
+    .footer--content--title--socials .instagram:hover i {
+        color: rgb(255, 0, 255);
+    }
+    .footer--content--title--socials .google:hover i {
+        color: rgb(255, 0, 43);
+    }
+    .footer--content--title--socials .behance:hover i {
+        color: rgb(119, 255, 119);
+    }
+}
+
+/**********Vista Desktop**************/

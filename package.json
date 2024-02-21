@@ -1,17 +1,23 @@
 {
   "dependencies": {
+    "bootstrap": "^5.2.1",
+    "nodejs": "^0.0.0",
     "sass": "^1.56.1"
-  }
-}
-{
+  },
   "keywords": [],
   "name": "dmd",
   "version": "MAJOR.MINOR.PATCH",
-  "dependencies": "bootstrap: ^5.2.1",
   "repository": {
-    "type”: "git",
-    "url": "https:// celedelgado.github.io/dmd",
-  }
+    "type": "git",
+    "url": "https://celedelgado.github.io/dmd/"
+  },
   "author": "Celeste Delgado",
   "license": "apache-2-0",
+  "scripts": {
+    "css": "node-sass --include ./node_module --include-scss --compress ./src/css/main.scss ./dist/css/style.css",
+    "sass": "node-sass scss/main.scss css/style.css"
+  },
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
 }

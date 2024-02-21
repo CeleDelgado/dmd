@@ -11,52 +11,86 @@
         content="developer, desarrollo, desarrollo web, html, css, javaScript, gitHub, frontend, marketing, marketing digital, e-commerce, inbound marketing, community manager, publicidad, redes sociales, growth marketing, ventas online, proyectos de negocio, medicion kpi, objetivos smart, design, graphic design, diseño, diseño gráfico, logos, edición de fotos, videos, marcas, banners, creaciones personalizadas">
 
     <link rel="stylesheet" href="scss/main.scss">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="scss/main.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> este es el viejo link, luego cambiar el archivo de carpeta para mas comodidad-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="./pages/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <title>dmd- developer, marketing & diseño</title>
+    <title>dmd- Developer, Marketing & Design</title>
 </head>
 
 <body>
 
     <head>
-        <!-- Agregamos el navegador y una fila entera para el mismo -->
-        <div class="container-fluid">
-            <div class="row__nav">
-                <!-- en una vista grande, mediana o pequeña quiero que ocupe las 12 columnas de mi fila -->
-                <div class="col-xs-12 col-md-12 col-lg-12">
-                    <div class="container__nav__pricipal">
-                        <div class="container__nav__pricipal--menu">
-                            <div>
-                                <i><img src="./assets/icons/home-negro.png" alt="icono home" width="40vw"></i>
-                                <span><i><img src="./assets/icons/home-color.png" alt="icono home"
-                                            width="40vw"></i></span>
+        <!-- Agregamos todo en un contenedor para la portada del index -->
+        <div class="portada__index">
+            <!-- Agregamos el contenedor para el navegador y una fila entera para el mismo -->
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- en una vista pequeña, mediana o grande quiero que ocupe las 12 columnas de mi fila -->
+                    <div class="col-xs-12 col-md-12 col-lg-12">
+                        <div class="container__nav__pricipal">
+                            <div class="container__nav__pricipal--menu">
+                                <div>
+                                    <a href="./index.html"><i><img src="./assets/icons/home-negro.png" alt="icono home"
+                                                width="40vw"></i>
+                                        <span><i><img src="./assets/icons/home-color.png" alt="icono home"
+                                                    width="40vw"></i></span></a>
+                                </div>
+                                <div>
+                                    <a href="./pages/info.html"><i><img src="./assets/icons/info-negro.png"
+                                                alt="icono info" width="40vw"></i>
+                                        <span><i><img src="./assets/icons/info-color.png" alt="icono info"
+                                                    width="40vw"></i></span></a>
+                                </div>
+                                <div>
+                                    <i><img src="./assets/icons/developer-negro.png" alt="icono developer"
+                                            width="40vw"></i>
+                                    <span><i><img src="./assets/icons/developer-color.png" alt="icono developer"
+                                                width="40vw"></i></span>
+                                </div>
+                                <div>
+                                    <i><img src="./assets/icons/marketing-negro.png" alt="icono marketing"
+                                            width="40vw"></i>
+                                    <span><i><img src="./assets/icons/marketing-color.png" alt="icono marketing"
+                                                width="40vw"></i></span>
+                                </div>
+                                <div>
+                                    <i><img src="./assets/icons/design-negro.png" alt="icono desing" width="40vw"></i>
+                                    <span><i><img src="./assets/icons/design-color.png" alt="icono desing"
+                                                width="40vw"></i></span>
+                                </div>
+                                <div>
+                                    <i><img src="./assets/icons/contacto-negro.png" alt="icono contacto"
+                                            width="40vw"></i>
+                                    <span><i><img src="./assets/icons/contacto-color.png" alt="icono contacto"
+                                                width="40vw"></i></span>
+                                </div>
                             </div>
-                            <div>
-                                <i><img src="./assets/icons/info-negro.png" alt="icono info" width="40vw"></i>
-                                <span><i><img src="./assets/icons/info-color.png" alt="icono info"
-                                            width="40vw"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-12 col-lg-12" data-aos="zoom-in">
+                        <section class="portada__index--title">
+                            <div id="demotext">
+                                <h1>| Developer, Marketing & Design |</h1>
                             </div>
-                            <div>
-                                <i><img src="./assets/icons/developer-negro.png" alt="icono developer" width="40vw"></i>
-                                <span><i><img src="./assets/icons/developer-color.png" alt="icono developer"
-                                            width="40vw"></i></span>
-                            </div>
-                            <div>
-                                <i><img src="./assets/icons/marketing-negro.png" alt="icono marketing" width="40vw"></i>
-                                <span><i><img src="./assets/icons/marketing-color.png" alt="icono marketing"
-                                            width="40vw"></i></span>
-                            </div>
-                            <div>
-                                <i><img src="./assets/icons/design-negro.png" alt="icono desing" width="40vw"></i>
-                                <span><i><img src="./assets/icons/design-color.png" alt="icono desing"
-                                            width="40vw"></i></span>
-                            </div>
-                            <div>
-                                <i><img src="./assets/icons/contacto-negro.png" alt="icono contacto" width="40vw"></i>
-                                <span><i><img src="./assets/icons/contacto-color.png" alt="icono contacto"
-                                            width="40vw"></i></span>
+                        </section>
+                    </div>
+                </div>
+                <div class="row">
+                    <div data-aos="flip-down" data-aos-duration="1500" class="col-xs-12 col-md-12 col-lg-12">
+                        <div class="container__portada">
+                            <div class="portada__index--card">
+                                <h2>Sabemos cómo ayudarte</h2>
+                                <p>Bienvenidos a DMD, usted esta un paso más cerca de lograr sus objetivos, de que lo
+                                    guiemos a crear todos aquello que tiene proyectado en su mente. Comencemos!</p>
+                                <hr>
+                                <div class="portada__index--footer__card">
+                                    <h3 class="portada__index--user__name">DMD</h3>
+                                    <i>Developer, Marketing & Design</i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -64,44 +98,100 @@
             </div>
         </div>
     </head>
-
     <main>
-        <div class="container-fluid">
-            <div class="row__portada">
-                <div class="col-xs-12 col-md-12 col-lg-12">
-                    <div class="container__portada">
-
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row__portada__tarjeta">
-                <div class="col-xs-12 col-md-12 col-lg-12">
-
-                </div>
-            </div>
-        </div>
 
     </main>
 
     <aside>
+        <!--agregar alguna info adicional-->
     </aside>
 
     <footer>
-        <!-- Copyright, 2022, dmd
-
-Con licencia de Apache License, Versión 2.0 (la "Licencia");
-no puede usar este archivo excepto de conformidad con la Licencia.
-Puede obtener una copia de la Licencia en
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-A menos que lo exija la ley aplicable o se acuerde por escrito, el software
-distribuido bajo la Licencia se distribuye "TAL CUAL",
-SIN GARANTÍAS NI CONDICIONES DE NINGÚN TIPO, ya sean expresas o implícitas.
-Consulte la Licencia para conocer el idioma específico que rige los permisos y
-limitaciones bajo la Licencia. -->
+        <!-- Pie de página: footer(derechos) -->
+        <!-- <div class="container-fluid--footer">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <div class="pie__pagina__container__derechos">
+                        <div class="pie__pagina__container__derechos__texto">
+                            <p>Copyright, 2022, dmd. </p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        <!--liks footer(redes sociales) -->
+        <!-- <div class="row">
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <section class="pie__pagina__container__footer">
+                        <article class="">
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </div> -->
+        <!--Footer-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <section class="footer--content">
+                        <article class="footer--content--title">
+                            <h3>DMD</h3>
+                            <p>Developer, Marketing & Design</p>
+                            <ul class="footer--content--title--socials">
+                                <li class="facebook"><a href="https://www.facebook.com/profile.php?id=100092316154045"><i class="fa fa-facebook"></i></a></li>
+                                <li class="instagram"><a href="https://www.instagram.com/dmd_corporation/"><i class="fa fa-instagram"></i></a></li>
+                                <li class="google"><a href="mailto:dmd.corporation.sa56.3@gmail.com"><i class="fa fa-google-plus"></i></a></li>
+                                <li class="behance"><a href="https://www.behance.net/celedelgado"><i class="fa fa-behance"></i></a></li>
+                            </ul>
+                        </article>
+                        <article class="footer--content--bottom">
+                            <p>Copyright &copy;2023 <span> DMD</span></p>
+                            <span class="footer--content--bottom--licencia">Esta corporación cuenta con licencia de Apache License, Versión 2.0 (la
+                                "Licencia");
+                                no puede usar este archivo excepto de conformidad con la Licencia.
+                                Puede obtener una copia de la Licencia en:
+                                http://www.apache.org/licenses/LICENSE-2.0
+                                A menos que lo exija la ley aplicable o se acuerde por escrito, el software
+                                distribuido bajo la Licencia se distribuye "TAL CUAL",
+                                SIN GARANTÍAS NI CONDICIONES DE NINGÚN TIPO, ya sean expresas o implícitas.
+                                Consulte la Licencia para conocer el idioma específico que rige los permisos y
+                                limitaciones bajo la Licencia.</span>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <!--links para librerias aos-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+        });
+    </script>
+
+    <!-- Script para confetti-->
+    <script src="./javaScript/confetti.js"></script>
+    <script>
+        // comienzo
+        const start = () => {
+            setTimeout(function () {
+                confetti.start()
+            }, 1000); // ( 1000 = 1 seg)
+        };
+        //  fin
+        const stop = () => {
+            setTimeout(function () {
+                confetti.stop()
+            }, 5000); // ( 5000 = 5 seg)
+        };
+        start();
+        stop();
+    </script>
+
+    <!--Font Awesone-->
+    <script src="https://kit.fontawesome.com/8176a75640.js" crossorigin="anonymous"></script>
 
 </body>
 
