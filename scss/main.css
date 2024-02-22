@@ -11407,6 +11407,9 @@ template {
 }
 /*****Vista Desktop*****/
 @media (min-width: 1200px) {
+  .container__nav__pricipal--menu {
+    margin-top: 1%;
+  }
   .container__nav__pricipal--menu div {
     padding: 20px 50px;
   }
@@ -11631,5 +11634,8 @@ footer {
   }
   .portada__index--card p {
     font-size: 1em;
+  }
+  #demotext {
+    background: black;
   }
 }/*# sourceMappingURL=main.css.map */
