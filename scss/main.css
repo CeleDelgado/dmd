@@ -11177,6 +11177,98 @@ template {
   display: none;
 }
 
+:root {
+  --color: #17a2ff;
+}
+
+.boton--idioma {
+  display: flex;
+  height: 100vh;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn {
+  position: relative;
+  padding: 20px 50px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 10px;
+  transition: all 0.6s ease;
+  margin-top: -462%;
+}
+
+.btn-2 {
+  border: 3px solid;
+}
+
+.btn-2:active {
+  background-color: #001a2b;
+  box-shadow: 0 0 20px var(--color);
+  border-color: var(--color);
+}
+
+.btn-2 span:nth-child(n) {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 3px solid;
+  transition: all 0.5s ease;
+}
+
+.btn-2 span:nth-child(1) {
+  right: 10%;
+  top: -15%;
+  background-color: #fff;
+}
+
+.btn-2 span:nth-child(2) {
+  left: 10%;
+  bottom: -10%;
+}
+
+.btn-2:active span:nth-child(1) {
+  right: 80%;
+  transform: rotate(90deg);
+  color: var(--color);
+  background-color: var(--color);
+}
+
+.btn-2:active span:nth-child(2) {
+  left: 80%;
+  transform: rotate(90deg);
+  color: var(--color);
+}
+
+@media (min-width: 768px) {
+  .btn {
+    margin-top: -344%;
+  }
+  .btn-2:hover {
+    background-color: #001a2b;
+    box-shadow: 0 0 20px var(--color);
+    border-color: var(--color);
+  }
+  .btn-2:hover span:nth-child(1) {
+    right: 80%;
+    transform: rotate(90deg);
+    color: var(--color);
+    background-color: var(--color);
+  }
+  .btn-2:hover span:nth-child(2) {
+    left: 80%;
+    transform: rotate(90deg);
+    color: var(--color);
+  }
+}
+@media (min-width: 1200px) {
+  .btn {
+    margin-top: -138%;
+    margin-left: 84%;
+  }
+}
 .container__background-triangle {
   max-width: 1200px;
   height: 600px;
@@ -11517,10 +11609,11 @@ footer {
 }
 /**********Vista Desktop**************/
 /*PAGES*/
+/*
 * {
-  border: 1px solid red;
+    border: 1px solid red;
 }
-
+*/
 .container__index--main {
   background: #212025;
   width: 100%;
@@ -11566,7 +11659,7 @@ footer {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   transition: all 300ms;
-  margin-top: -190%;
+  margin-top: -84%;
 }
 .portada__index--card h2 {
   font-size: 20px;
@@ -11607,12 +11700,12 @@ footer {
 @media (min-width: 768px) {
   .portada__index--title h1 {
     font-size: 1.5em;
-    margin-top: -84%;
+    margin-top: -149%;
   }
   .portada__index--card {
     margin-left: 25%;
     margin-right: 25%;
-    margin-top: -60%;
+    margin-top: -38%;
   }
 }
 /*****Vista Desktop*****/

@@ -1,0 +1,109 @@
+
+//*************VISTA MOBILE********//
+
+
+//boton de lenguaje
+:root{
+    --color: #17a2ff;
+}
+
+.boton--idioma{
+    display: flex;
+    height: 100vh;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.btn{
+    position: relative;
+    padding: 20px 50px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 10px;
+    transition: all 0.6s ease;
+    margin-top: -462%;
+}
+.btn-2{
+    border: 3px solid;
+}
+.btn-2:active{
+    background-color: #001a2b;
+    box-shadow: 0 0 20px var(--color);
+    border-color: var(--color);
+}
+.btn-2 span:nth-child(n){
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 3px solid;
+    transition: all 0.5s ease;
+}
+.btn-2 span:nth-child(1){
+    right: 10%;
+    top: -15%;
+    background-color: #fff;
+}
+.btn-2 span:nth-child(2){
+    left: 10%;
+    bottom: -10%;
+}
+.btn-2:active span:nth-child(1){
+    right: 80%;
+    transform: rotate(90deg);
+    color: var(--color);
+    background-color: var(--color);
+}
+.btn-2:active span:nth-child(2){
+    left: 80%;
+    transform: rotate(90deg);
+    color: var(--color);
+}
+
+
+
+
+//*************VISTA TABLET********//
+@mixin tablet {
+    @media (min-width: 768px) {
+        @content
+    }
+} 
+
+@include tablet {
+    .btn{
+        margin-top: -344%;
+    }
+    .btn-2:hover{
+        background-color: #001a2b;
+        box-shadow: 0 0 20px var(--color);
+        border-color: var(--color);
+    }
+    .btn-2:hover span:nth-child(1){
+        right: 80%;
+        transform: rotate(90deg);
+        color: var(--color);
+        background-color: var(--color);
+    }
+    .btn-2:hover span:nth-child(2){
+        left: 80%;
+        transform: rotate(90deg);
+        color: var(--color);
+    }
+
+}
+
+//*************VISTA DESKTOP********
+@mixin desktop {
+    @media (min-width: 1200px) {
+            @content
+    }
+} 
+
+@include desktop {
+    .btn{
+        margin-top: -138%;
+        margin-left: 84%;
+    }
+}

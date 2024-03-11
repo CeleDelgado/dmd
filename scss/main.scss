@@ -4,19 +4,24 @@
 /*BASE*/
 @import "./base/bootstrap_min";
 @import "./base/normalize";
+// @import "./base/typography.scss"; = REGLAS TIPOGRAFICAS
 
 // /*COMPONENTS*/
-// @import "./components/botons";
-// @import "./components/_carousel";
+@import "./components/buttons";
+// @import "./components/dropdown";
 // @import "./components/parrallax";
 // @import "./components/slider";
 // @import "./components/table";
+// @import "./components/carousel";
 @import "./components/cards";
 
 /*LAYOUT*/
 @import "./layout/header";
 @import "./layout/footer";
 // @import "./layout/forms";
+// @import "./layout/navigation";
+// @import "./layout/grid";
+// @import "./layout/sidebar";
 
 /*PAGES*/
 @import "./pages/index";
