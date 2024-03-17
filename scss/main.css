@@ -11197,7 +11197,7 @@ template {
   color: #fff;
   letter-spacing: 5px;
   transition: all 0.6s ease;
-  margin-top: -462%;
+  margin-top: -636%;
 }
 
 .btn-2 {
@@ -11244,7 +11244,7 @@ template {
 
 @media (min-width: 768px) {
   .btn {
-    margin-top: -344%;
+    margin-top: -358%;
   }
   .btn-2:hover {
     background-color: #001a2b;
@@ -11269,6 +11269,7 @@ template {
     margin-left: 84%;
   }
 }
+/*****VISTA MOBILE****/
 .container__background-triangle {
   max-width: 1200px;
   height: 600px;
@@ -11354,6 +11355,7 @@ template {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  margin-top: 156%;
 }
 .container__cg__card {
   width: 350px;
@@ -11414,6 +11416,11 @@ template {
   font-weight: 500;
 }
 
+@media (min-width: 768px) {
+  .container__cg {
+    margin-top: 42%;
+  }
+}
 /*****Vista Desktop*****/
 @media (max-width: 1200px) {
   .container__cg__card {
@@ -11731,4 +11738,12 @@ footer {
   #demotext {
     background: black;
   }
+}
+/*
+* {
+    border: 1px solid red;
+}
+*/
+body {
+  background-color: #212025;
 }/*# sourceMappingURL=main.css.map */
