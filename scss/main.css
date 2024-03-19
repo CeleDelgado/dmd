@@ -11422,7 +11422,10 @@ template {
   }
 }
 /*****Vista Desktop*****/
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
+  .container__cg {
+    margin-top: 13%;
+  }
   .container__cg__card {
     position: relative;
     top: 0;
@@ -11430,6 +11433,9 @@ template {
     transform: none;
     margin-top: 100px;
     padding-bottom: 100px;
+  }
+  .container__background-triangle {
+    top: 70%;
   }
 }
 /*LAYOUT*/

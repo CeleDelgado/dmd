@@ -173,13 +173,14 @@
 /*****Vista Desktop*****/
 
 @mixin desktop {
-    @media (max-width: 1200px) {
+    @media (min-width: 1200px) {
             @content
     }
 }
 
 @include desktop {
     .container__cg {
+        margin-top: 13%;
         &__card {
             position: relative;
             top: 0;
@@ -188,6 +189,9 @@
             margin-top: 100px;
             padding-bottom: 100px;
         }
+    }
+    .container__background-triangle{
+        top: 70%;
     }
 }
 
