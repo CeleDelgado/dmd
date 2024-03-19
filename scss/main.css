@@ -11270,12 +11270,16 @@ template {
   }
 }
 /*****VISTA MOBILE****/
+.container__index--main--title {
+  color: #fff;
+}
+
 .container__background-triangle {
   max-width: 1200px;
   height: 600px;
   margin: auto;
   position: fixed;
-  top: 50%;
+  top: 29%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -11355,7 +11359,7 @@ template {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-top: 156%;
+  margin-top: 120%;
 }
 .container__cg__card {
   width: 350px;
@@ -11418,7 +11422,10 @@ template {
 
 @media (min-width: 768px) {
   .container__cg {
-    margin-top: 42%;
+    margin-top: 32%;
+  }
+  .container__background-triangle {
+    top: 42%;
   }
 }
 /*****Vista Desktop*****/
