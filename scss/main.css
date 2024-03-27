@@ -11270,10 +11270,6 @@ template {
   }
 }
 /*****VISTA MOBILE****/
-.container__index--main--title {
-  color: #fff;
-}
-
 .container__background-triangle {
   max-width: 1200px;
   height: 600px;
@@ -11759,4 +11755,44 @@ footer {
 */
 body {
   background-color: #212025;
-}/*# sourceMappingURL=main.css.map */
+}
+
+h1 {
+  font-size: small;
+  align-items: center;
+}
+
+/*************VISTA TABLET*******
+
+@mixin tablet {
+    @media (min-width: 768px) {
+        @content
+    }
+} 
+@include tablet { */
+/*****Vista Desktop*****
+@mixin desktop {
+    @media (min-width: 1200px) {
+        @content
+    }
+}
+@include desktop { */
+/*
+* {
+    border: 1px solid red;
+}
+*/
+/*************VISTA TABLET*******
+@mixin tablet {
+    @media (min-width: 768px) {
+        @content
+    }
+} 
+@include tablet { */
+/*****Vista Desktop*****
+@mixin desktop {
+    @media (min-width: 1200px) {
+        @content
+    }
+}
+@include desktop { *//*# sourceMappingURL=main.css.map */
