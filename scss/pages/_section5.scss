@@ -13,29 +13,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-
+    min-height: 50vh;
+    //margin-top: -57%;
+    margin-bottom: 30%;
+    width: 100%;
+    margin-top: -280%;
+    margin-left: 11%;
     background: linear-gradient(
         50deg,
-        rgba(40,42,55,1) 50%,
-        rgba(40,42,55,0.7)
+        rgba(40,42,55,0.93) 50%,
+        rgba(40,42,55,0.5)
         ),
-        url(../../assets/img/ver/9cc59290c1a8e8e67fb42498350af4d8.jpg);
+        url(../../assets/img/ver/f05cbb79d0e0084310dd93ef88476d7c.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 50px;
-    width: 1000px;
+    //padding: 50px;
+    width: 80%;
     border-radius: 25px;
     h2 {
         color: #F4F6F9;
-        font-size: 40px;
+        font-size: 30px;
         margin-bottom: 25px;
+        margin-left: 2%;
     }
     form {
         display: flex;
         flex-direction: column;
         width: 50%;
+        margin-top: 7%;
     }
     label {
         font-size: 17px;
@@ -58,6 +64,7 @@
         background-color: #1E92E9;
         width: 150px;
         align-self: flex-end;
+        margin-top: 3%;
         cursor: pointer;
         :hover {
             background-color: #219BF9;
@@ -65,40 +72,31 @@
     }
 }
 
-//responsive 
+//*********vista tablet***********//
 
-@media(max-width:991px){
-    body {
-        padding: 30px;
+@mixin tablet {
+    @media(min-width: 768px) {
+        @content
     }
+}
+@include tablet(){
     .form-content{
-        width: 100%;
-        .form {
-            width: 100%;
-        }
+        margin-top: -152%;
     }
 }
 
 
 
+//*************VISTA DESKTOP*******//
 
 
-
-
-
-
-/*************VISTA TABLET*******
-@mixin tablet {
-    @media (min-width: 768px) {
-        @content
-    }
-} 
-@include tablet { */
-
-/*****Vista Desktop*****
 @mixin desktop {
     @media (min-width: 1200px) {
         @content
     }
 }
-@include desktop { */
+@include desktop() {
+    .form-content {
+        margin-top: -30%;
+    }
+}
