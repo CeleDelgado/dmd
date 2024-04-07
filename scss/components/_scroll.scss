@@ -18,7 +18,7 @@
 body {
     background: var(--back-color);
 }
-main {
+.container__main--section3 {
     transition: 0.8s;
     background: #000522;
     section {
@@ -58,11 +58,11 @@ main {
         font-size: 10vw;
     }
     }
-    .sec {
+    .secc {
         position: relative;
         min-height: 500px;
         padding: 100px;
-        .content {
+        .contento {
             position: relative;
             z-index: 2;
             h2 {
