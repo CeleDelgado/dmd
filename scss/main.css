@@ -11203,6 +11203,7 @@ template {
 
 .btn-2 {
   border: 3px solid;
+  margin-bottom: -586px;
 }
 
 .btn-2:active {
@@ -11245,7 +11246,7 @@ template {
 
 @media (min-width: 768px) {
   .btn {
-    margin-top: -358%;
+    margin-top: -430%;
   }
   .btn-2:hover {
     background-color: #001a2b;
@@ -11266,7 +11267,7 @@ template {
 }
 @media (min-width: 1200px) {
   .btn {
-    margin-top: -138%;
+    margin-top: -170%;
     margin-left: 84%;
   }
 }
@@ -12017,13 +12018,14 @@ body {
   z-index: 2;
 }
 .container__main--section3 .secc .contento h2 {
-  font-size: 3.5em;
+  font-size: 2.5em;
   margin-bottom: 10px;
   color: #20496a;
 }
 .container__main--section3 .secc .contento p {
   font-size: 1.2em;
   color: #f5f7f8;
+  text-align: justify;
 }
 
 /*loading*/
@@ -12283,6 +12285,197 @@ body {
     left: 50%;
     top: 50%;
     opacity: 1;
+  }
+}
+.container__cards--section2 section {
+  padding: 100px 0;
+}
+
+.container__cards--section2 {
+  overflow-x: hidden;
+}
+
+.container__cards--section2 {
+  font-family: "Roboto";
+  font-size: 17px;
+  font-weight: 200;
+  background-color: #eee;
+}
+
+/*.container__cards--section2{
+  background: $primary;
+  color: $text;
+  padding: 150px 0;
+
+  p {
+    font-family: 'Allura';
+    color: rgba(255, 255, 255, .2);
+    margin-bottom: 0;
+    font-size: 60px;
+    margin-top: -30px;
+
+  }
+} */
+.timeline {
+  position: relative;
+}
+.timeline::before {
+  content: "";
+  background: #C5CAE9;
+  width: 5px;
+  height: 95%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  width: 100%;
+  margin-bottom: 70px;
+}
+.timeline-item:nth-child(even) .timeline-content {
+  float: right;
+  padding: 40px 30px 10px 30px;
+}
+.timeline-item:nth-child(even) .timeline-content .date {
+  right: auto;
+  left: 0;
+}
+.timeline-item:nth-child(even) .timeline-content::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 30px;
+  left: -15px;
+  border-width: 10px 15px 10px 0;
+  border-color: transparent #f5f5f5 transparent transparent;
+}
+.timeline-item::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.timeline-content {
+  position: relative;
+  width: 45%;
+  padding: 10px 30px;
+  border-radius: 4px;
+  background: #f5f5f5;
+  box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
+}
+.timeline-content::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 30px;
+  right: -15px;
+  border-width: 10px 0 10px 15px;
+  border-color: transparent transparent transparent #f5f5f5;
+}
+
+.timeline-img {
+  width: 30px;
+  height: 30px;
+  background: #c7b8ff;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-top: 25px;
+  margin-left: -15px;
+}
+
+.container__cards--section2 a {
+  background: #c7b8ff;
+  color: #FFFFFF;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  display: inline-block;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.6);
+}
+.container__cards--section2 a:hover, .container__cards--section2 a:active, .container__cards--section2 a:focus {
+  background: #9f85ff;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.timeline-card {
+  padding: 0 !important;
+}
+.timeline-card p {
+  padding: 0 20px;
+}
+.timeline-card a {
+  margin-left: 20px;
+}
+
+.timeline-item .timeline-img-header {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://picsum.photos/1000/800/?random") center center no-repeat;
+  background-size: cover;
+}
+
+.timeline-img-header {
+  height: 200px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.timeline-img-header h2 {
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+}
+
+blockquote {
+  margin-top: 30px;
+  color: #757575;
+  border-left-color: #c7b8ff;
+  padding: 0 20px;
+}
+
+.datex {
+  background: #FF4081;
+  display: inline-block;
+  color: #FFFFFF;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline::before {
+    left: 50px;
+  }
+  .timeline .timeline-img {
+    left: 50px;
+  }
+  .timeline .timeline-content {
+    max-width: 100%;
+    width: auto;
+    margin-left: 70px;
+  }
+  .timeline .timeline-item:nth-child(even) .timeline-content {
+    float: none;
+  }
+  .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 30px;
+    left: -15px;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #f5f5f5 transparent transparent;
   }
 }
 /*LAYOUT*/
@@ -12741,7 +12934,7 @@ section {
 #demotext {
   color: #FFFFFF;
   background: #333333;
-  text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+  text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #2db2ff 0px 0px 20px, #2db2ff 0px 0px 30px, #2db2ff 0px 0px 40px, #2db2ff 0px 0px 50px, #2db2ff 0px 0px 75px;
   color: #FFFFFF;
   background: #333333;
 }
@@ -12847,6 +13040,26 @@ body {
 h1 {
   font-size: small;
   align-items: center;
+}
+
+/*************VISTA TABLET*******
+
+@mixin tablet {
+    @media (min-width: 768px) {
+        @content
+    }
+} 
+@include tablet { */
+/*****Vista Desktop*****
+@mixin desktop {
+    @media (min-width: 1200px) {
+        @content
+    }
+}
+@include desktop { */
+.container__titlee--section2 h3 {
+  padding: 2px;
+  color: bisque;
 }
 
 /*************VISTA TABLET*******

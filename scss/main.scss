@@ -10,7 +10,6 @@
 @import "./components/buttons";
 // @import "./components/dropdown";
 // @import "./components/parrallax";
-// @import "./components/slider";
 // @import "./components/table";
 // @import "./components/carousel";
 @import "./components/title";
@@ -18,6 +17,7 @@
 @import "./components/floatingcard";
 @import "./components/redesbotones";
 @import "./components/scroll";
+@import "./components/slidercard";
 
 /*LAYOUT*/
 @import "./layout/header";
@@ -31,7 +31,7 @@
 /*PAGES*/
 @import "./pages/index";
 @import "./pages/section1"; //info
-// @import "./pages/section2"; //desarrollo
+@import "./pages/section2"; //desarrollo
 // @import "./pages/section3"; //marketing
-// @import "./pages/section4"; //diseño
+@import "./pages/section4"; //diseño
 @import "./pages/section5"; //contacto
