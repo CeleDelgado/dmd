@@ -11753,9 +11753,9 @@ h1 {
 }
 
 p {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: light;
-  color: #ffffff;
+  color: #000000;
 }
 
 span a {
@@ -13060,23 +13060,60 @@ h1 {
 .container__titlee--section2 h3 {
   padding: 2px;
   color: bisque;
+  margin-top: -391%;
+  margin-bottom: 220%;
 }
 
-/*************VISTA TABLET*******
-
-@mixin tablet {
-    @media (min-width: 768px) {
-        @content
-    }
-} 
-@include tablet { */
-/*****Vista Desktop*****
-@mixin desktop {
-    @media (min-width: 1200px) {
-        @content
-    }
+@media (min-width: 768px) {
+  .container__titlee--section2 h3 {
+    margin-top: -224%;
+    margin-bottom: 50%;
+  }
 }
-@include desktop { */
+@media (min-width: 1200px) {
+  .container__titlee--section2 h3 {
+    margin-top: -64%;
+    margin-bottom: 40%;
+  }
+}
+.container__titlee--section3 h3 {
+  padding: 2px;
+  color: rgb(206, 255, 196);
+  margin-top: -391%;
+  margin-bottom: 220%;
+}
+
+@media (min-width: 768px) {
+  .container__titlee--section3 h3 {
+    margin-top: -224%;
+    margin-bottom: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .container__titlee--section3 h3 {
+    margin-top: -64%;
+    margin-bottom: 40%;
+  }
+}
+.container__titlee--section4 h3 {
+  padding: 2px;
+  color: rgb(196, 255, 255);
+  margin-top: -391%;
+  margin-bottom: 220%;
+}
+
+@media (min-width: 768px) {
+  .container__titlee--section4 h3 {
+    margin-top: -224%;
+    margin-bottom: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .container__titlee--section4 h3 {
+    margin-top: -64%;
+    margin-bottom: 40%;
+  }
+}
 /*
 * {
     border: 1px solid red;

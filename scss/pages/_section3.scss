@@ -1,12 +1,10 @@
 //*************vista mobiles***************//
 
-//*********caricatura*********//
 
-
-.container__titlee--section2 {
+.container__titlee--section3 {
     h3 {
         padding: 2px;
-        color: bisque;
+        color: rgb(206, 255, 196);
         margin-top: -391%;
         margin-bottom: 220%;
     }
@@ -22,7 +20,7 @@
     }
 } 
 @include tablet { 
-    .container__titlee--section2 {
+    .container__titlee--section3 {
         h3 {
             margin-top: -224%;
             margin-bottom: 50%;
@@ -39,7 +37,7 @@
     }
 }
 @include desktop { 
-    .container__titlee--section2 {
+    .container__titlee--section3 {
         h3 {
             margin-top: -64%;
             margin-bottom: 40%;

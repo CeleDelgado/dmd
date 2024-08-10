@@ -1,0 +1,46 @@
+//*************vista mobiles***************//
+
+
+.container__titlee--section4 {
+    h3 {
+        padding: 2px;
+        color: rgb(196, 255, 255);
+        margin-top: -391%;
+        margin-bottom: 220%;
+    }
+}
+
+
+
+//************VISTA TABLET*******
+
+@mixin tablet {
+    @media (min-width: 768px) {
+        @content
+    }
+} 
+@include tablet { 
+    .container__titlee--section4 {
+        h3 {
+            margin-top: -224%;
+            margin-bottom: 50%;
+        }
+    }
+}
+
+
+//*****Vista Desktop*****//
+
+@mixin desktop {
+    @media (min-width: 1200px) {
+        @content
+    }
+}
+@include desktop { 
+    .container__titlee--section4 {
+        h3 {
+            margin-top: -64%;
+            margin-bottom: 40%;
+        }
+    }
+}
