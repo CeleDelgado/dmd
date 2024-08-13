@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Esta es una página de Desarrollo Web, Marketing Digital y Diseño Gráfico, en esta sección encontrarás información sobre sector de desarrollo web">
+        content="Esta es una página de Desarrollo Web, Marketing Digital y Diseño Gráfico, en esta sección encontrarás información sobre sector de Diseño grafico">
     <meta name="keywords"
         content="developer, desarrollo, desarrollo web, html, css, javaScript, github, node js">
 
@@ -70,7 +70,7 @@
             <div class="row">
                 <div class="col-xs-12 col-md-12 col-lg-12">
                     <div class="boton--idioma">
-                        <a href="#" class="btn btn-2">English
+                        <a href="./section4_english.html" class="btn btn-2">English
                             <!--los span son para la decoracion del boton-->
                             <span></span>
                             <span></span>
@@ -87,6 +87,43 @@
         <!--titulo de presentación-->
         <div class="container__titlee--section4">
             <h3>DISEÑO GRAFICO</h3>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    
+                    <div class="container__section4--reproductor">
+                        <video id="video1">
+                            <source src="../assets/videos/2024-08-13-18-19-23.mp4" type="video/mp4">
+                        </video>
+
+                        <div>
+                            <button onclick="playPause()">&#9658;/||</button>
+                            <button onclick="stop()">&#9726;</button>
+                            <button onclick="skip(-10)">&lt;&lt;</button>
+                            <button onclick="skip(-10)">&gt;&gt;</button>
+                        </div>
+                        <script>
+                            var miVideo= document.getElementById("video1");
+                            function playPause(){
+                                if(miVideo.paused)
+                                    miVideo.play();
+                                else
+                                    miVideo.pause();
+                            }
+                            function stop(){
+                                miVideo.pause();
+                                miVideo.currentTime=0;
+                            }
+                            function skip(value){
+                                miVideo.currentTime += value;
+                            }
+                        </script>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
 
     </main>
