@@ -11193,7 +11193,7 @@ template {
 
 .btn {
   position: relative;
-  padding: 20px 50px;
+  padding: 20px 20px;
   text-decoration: none;
   color: #fff;
   letter-spacing: 5px;
@@ -11252,6 +11252,7 @@ template {
     background-color: #001a2b;
     box-shadow: 0 0 20px var(--color);
     border-color: var(--color);
+    color: #fff;
   }
   .btn-2:hover span:nth-child(1) {
     right: 80%;
@@ -11267,7 +11268,7 @@ template {
 }
 @media (min-width: 1200px) {
   .btn {
-    margin-top: -170%;
+    margin-top: -183%;
     margin-left: 84%;
   }
 }
