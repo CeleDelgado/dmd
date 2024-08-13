@@ -70,10 +70,12 @@ footer {
         font-size: 14px;
         word-spacing: 2px;
         text-transform: capitalize;
+        color: #FFF;
         span {
             text-transform: uppercase;
-            opacity: .4;
+            //opacity: .4;
             font-weight: 200;
+            color: #FFF;
         }
     }
 }
