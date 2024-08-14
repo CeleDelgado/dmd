@@ -27,7 +27,7 @@
 }
 .btn-2{
     border: 3px solid;
-    margin-bottom: -586px;
+    margin-bottom: -350px;
 }
 .btn-2:active{
     background-color: #001a2b;
@@ -74,7 +74,7 @@
 
 @include tablet {
     .btn{
-        margin-top:  -430%;
+        margin-top:  -405%;
     }
     .btn-2:hover{
         background-color: #001a2b;
@@ -105,7 +105,7 @@
 
 @include desktop {
     .btn{
-        margin-top:  -183%;
+        margin-top:  -165%;
         margin-left: 84%;
     }
 }

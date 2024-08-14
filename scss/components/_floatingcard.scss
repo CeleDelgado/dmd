@@ -55,6 +55,7 @@ span a {
 	background: linear-gradient(135deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
 	margin-left: 20%;
 	margin-right: 20%;
+	margin-top: -3%;
 
     &__avatar {
         width: 150px;
@@ -77,6 +78,16 @@ span a {
 	    text-align: center;
     }
 }
+//*********vista tablet***********//
 
-
+@mixin tablet {
+    @media(min-width: 768px) {
+        @content
+    }
+}
+@include tablet(){
+    .containercontact {
+		margin-top: -1%;
+	}
+}
 

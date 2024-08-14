@@ -2,7 +2,7 @@
 //***boton con redes sociales: CONTACTOS section 5**/
 
 .phone {
-    width: 320px;
+    width: 169px;//320px;
     height: 260px;
     margin: auto;
     display: flex;
@@ -124,4 +124,17 @@
 #s3:checked ~ .circle,
 #s3:checked ~ div div .indicator {
     left: 66%;
+}
+
+//*********vista tablet***********//
+
+@mixin tablet {
+    @media(min-width: 768px) {
+        @content
+    }
+}
+@include tablet(){
+    .phone {
+        width: 320px;
+    }
 }

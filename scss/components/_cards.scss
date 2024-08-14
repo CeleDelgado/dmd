@@ -94,7 +94,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 120%;
+    margin-top: 139%;
     
     &__card {
         width: 350px;
@@ -165,7 +165,7 @@
 
 @include tablet {
     .container__cg{
-        margin-top: 32%; 
+        margin-top: 70%; 
     }
     .container__background-triangle {
         top: 42%;
