@@ -4,9 +4,14 @@
 .container__titlee--section3 {
     h3 {
         padding: 2px;
-        color: rgb(206, 255, 196);
+        background: rgb(221,250,208);
+        background: linear-gradient(126deg, rgba(221,250,208,1) 0%, rgba(1,255,0,1) 100%); 
+        background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
         margin-top: -310%;
         margin-bottom: 80%;
+        font-size: 80px;
     }
 }
 
@@ -121,7 +126,7 @@
 @include desktop {
     .container__titlee--section3 {
         h3 {
-            margin-top: -64%;
+            margin-top: -70%;
             margin-bottom: 40%;
         }
     }

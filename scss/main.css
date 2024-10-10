@@ -13074,9 +13074,14 @@ h1 {
 @include desktop { */
 .container__titlee--section2 h3 {
   padding: 2px;
-  color: bisque;
+  background: rgb(250, 230, 208);
+  background: linear-gradient(126deg, rgb(250, 230, 208) 0%, rgb(255, 115, 0) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   margin-top: -310%;
   margin-bottom: 80%;
+  font-size: 50px;
 }
 
 @media (min-width: 768px) {
@@ -13087,15 +13092,20 @@ h1 {
 }
 @media (min-width: 1200px) {
   .container__titlee--section2 h3 {
-    margin-top: -64%;
+    margin-top: -70%;
     margin-bottom: 40%;
   }
 }
 .container__titlee--section3 h3 {
   padding: 2px;
-  color: rgb(206, 255, 196);
+  background: rgb(221, 250, 208);
+  background: linear-gradient(126deg, rgb(221, 250, 208) 0%, rgb(1, 255, 0) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   margin-top: -310%;
   margin-bottom: 80%;
+  font-size: 80px;
 }
 
 .container__cards--section3 {
@@ -13192,7 +13202,7 @@ h1 {
 }
 @media (min-width: 1200px) {
   .container__titlee--section3 h3 {
-    margin-top: -64%;
+    margin-top: -70%;
     margin-bottom: 40%;
   }
   .container__cards--section3:hover .front {
@@ -13204,9 +13214,14 @@ h1 {
 }
 .container__titlee--section4 h3 {
   padding: 2px;
-  color: rgb(196, 255, 255);
+  background: rgb(231, 251, 250);
+  background: linear-gradient(126deg, rgb(231, 251, 250) 0%, rgb(0, 255, 239) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   margin-top: -310%;
   margin-bottom: 145%;
+  font-size: 80px;
 }
 
 .container__section4--reproductor {
@@ -13242,7 +13257,7 @@ h1 {
 }
 @media (min-width: 1200px) {
   .container__titlee--section4 h3 {
-    margin-top: -64%;
+    margin-top: -70%;
     margin-bottom: 40%;
   }
   .container__section4--reproductor {
