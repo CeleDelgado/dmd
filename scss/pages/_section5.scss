@@ -6,6 +6,17 @@
 
 //*********** vista mobile ***************
 
+.letters {
+    span {
+        color: rgb(255, 251, 0);
+    }
+
+    p {
+        color: #fff;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+}
 
 .form-content {
     font-family: Arial, Helvetica, sans-serif;
@@ -19,60 +30,71 @@
     width: 100%;
     margin-top: -222%;
     margin-left: 11%;
-    background: rgb(0,0,0);
-background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(149,140,140,1) 100%);
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(149, 140, 140, 1) 100%);
     //background: linear-gradient(
-        //50deg,
-        //rgba(40,42,55,0.93) 50%,
-        //rgba(40,42,55,0.5)
-        //),
-        
-        //url(../../assets/img/ver/f05cbb79d0e0084310dd93ef88476d7c.jpg);
+    //50deg,
+    //rgba(40,42,55,0.93) 50%,
+    //rgba(40,42,55,0.5)
+    //),
+
+    //url(../../assets/img/ver/f05cbb79d0e0084310dd93ef88476d7c.jpg);
     //background-position: center;
     //background-repeat: no-repeat;
     //background-size: cover;
     padding: 2px;
     width: 80%;
     border-radius: 25px;
+
     h2 {
-        color: #F4F6F9;
+        color: #f4f6f9;
         font-size: 30px;
         margin-bottom: 25px;
         margin-left: 2%;
     }
+
     form {
         display: flex;
         flex-direction: column;
         width: 50%;
         margin-top: 7%;
     }
+
     label {
         font-size: 17px;
-        color: #959AAB;
+        color: #959aab;
         margin-bottom: 10px;
     }
-    input, textarea {
+
+    input,
+    textarea {
         padding: 17px 14px;
         background-color: #333646;
         border: 0;
         font-size: 15px;
-        color: #F4F6F9;
+        color: #f4f6f9;
         margin-bottom: 20px;
         border-radius: 10px;
     }
+
     :focus {
-        outline: 2px solid #1E92E9;
+        outline: 2px solid #1e92e9;
     }
+
     .btn {
-        background-color: #1E92E9;
+        background-color: #1e92e9;
         width: 150px;
         align-self: flex-end;
         margin-top: 3%;
         cursor: pointer;
+
         :hover {
-            background-color: #219BF9;
+            background-color: #219bf9;
         }
     }
+
     p {
         color: #fff;
     }
@@ -81,26 +103,25 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(149,140,140,1) 100%);
 //*********vista tablet***********//
 
 @mixin tablet {
-    @media(min-width: 768px) {
-        @content
+    @media (min-width: 768px) {
+        @content;
     }
 }
-@include tablet(){
-    .form-content{
+
+@include tablet() {
+    .form-content {
         margin-top: -152%;
     }
 }
 
-
-
 //*************VISTA DESKTOP*******//
-
 
 @mixin desktop {
     @media (min-width: 1200px) {
-        @content
+        @content;
     }
 }
+
 @include desktop() {
     .form-content {
         margin-top: -30%;

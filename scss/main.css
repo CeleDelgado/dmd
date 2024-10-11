@@ -13276,6 +13276,15 @@ h1 {
     border: 1px solid red;
 }
 */
+.letters span {
+  color: rgb(255, 251, 0);
+}
+.letters p {
+  color: #fff;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 .form-content {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #555764;
@@ -13294,7 +13303,7 @@ h1 {
   border-radius: 25px;
 }
 .form-content h2 {
-  color: #F4F6F9;
+  color: #f4f6f9;
   font-size: 30px;
   margin-bottom: 25px;
   margin-left: 2%;
@@ -13307,30 +13316,31 @@ h1 {
 }
 .form-content label {
   font-size: 17px;
-  color: #959AAB;
+  color: #959aab;
   margin-bottom: 10px;
 }
-.form-content input, .form-content textarea {
+.form-content input,
+.form-content textarea {
   padding: 17px 14px;
   background-color: #333646;
   border: 0;
   font-size: 15px;
-  color: #F4F6F9;
+  color: #f4f6f9;
   margin-bottom: 20px;
   border-radius: 10px;
 }
 .form-content :focus {
-  outline: 2px solid #1E92E9;
+  outline: 2px solid #1e92e9;
 }
 .form-content .btn {
-  background-color: #1E92E9;
+  background-color: #1e92e9;
   width: 150px;
   align-self: flex-end;
   margin-top: 3%;
   cursor: pointer;
 }
 .form-content .btn :hover {
-  background-color: #219BF9;
+  background-color: #219bf9;
 }
 .form-content p {
   color: #fff;
